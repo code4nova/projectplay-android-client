@@ -22,7 +22,7 @@ var playApp = function()
 		map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
 		//init branding stuff from app.config
-		if (self.config.logo) {
+		/*if (self.config.logo) {
 			$('#header_img').attr('src', self.config.logo);
 		}
 		
@@ -30,10 +30,10 @@ var playApp = function()
 			document.title = self.config.title;
 		}
 
-		initSidebar();
+		initSidebar();*/
 	};
 
-	var initSidebar = function() {
+	/*var initSidebar = function() {
 		//TODO: lolololol spaces, need to find a non hack way to get the button to look right
 		$("#app_panel").append("<a id='showAllBtn' class='app_panel_button' href='#'>Show all playgrounds...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>").button().click(
 			function() {
@@ -44,7 +44,7 @@ var playApp = function()
 
 	var showAllPlaygrounds = function() {
 		alert("boo");
-	};
+	};*/
 
 	return inst;
 };

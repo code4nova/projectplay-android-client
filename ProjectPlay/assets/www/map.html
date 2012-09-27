@@ -9,7 +9,11 @@
 		<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.js"></script>
 		<script src="./js/config.js" ></script>
-		<script src="./js/app.js" ></script>  
+		<script src="./js/app.js" ></script>
+	    <script>
+	      var app;
+	      $(document).ready(function() { app = playApp(); app.initialize(); });
+	    </script>
 	</head>
 
 	<body>
@@ -20,13 +24,7 @@
 			</div><!-- /header -->
 
 			<div id="app_panel" data-role="content">	
-				<a data-role="button" data-icon="search" data-iconpos="right" href="map.html">Show all playgrounds...</a>
-				<br/>
-				<br/>
-				<br/>
-				<label for="basic">Type address to find nearby playgrounds:</label>
-				<input type="search" name="address" id="basic" />
-				<a data-role="button" href="map.html">Search</a>	
+				<div id="map_canvas"></div>	
 			</div><!-- /content -->
 
 		</div><!-- /page -->
